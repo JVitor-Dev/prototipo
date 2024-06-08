@@ -1,0 +1,42 @@
+<div id="cadastrar-cliente" class="no-wrapped">
+  <div id="pop-up-agendar">
+    <h4>Cadastrar nova cliente</h4>
+
+    <form id="form-cliente">
+      <div>
+        <label for="name">Nome da cliente:</label><br />
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Nome da cliente"
+          required
+        />
+      </div>
+
+      <div>
+        <label for="contact">Número para contato:</label><br />
+        <input
+          type="number"
+          name="contact"
+          id="contact"
+          placeholder="Número para contato"
+        />
+      </div>
+
+      <div>
+        <label for="date-niver">Aniversário da cliente:</label><br />
+        <input type="date" name="date-niver" id="date-niver" />
+      </div>
+
+      <div class="buttons">
+        <button type="button" class="btn-Cancelar" onclick="popUpCliente()">
+          Cancelar
+        </button>
+        <button type="button" class="btn-Cadastrar" onclick="cadCliente()">
+          Cadastrar
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

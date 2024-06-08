@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Início</title>
+  </head>
+  <body class="wrapped">
+
+    <div id="main-wrapped">
+      <header>
+        <button><img src="../../../Assets/menu-svgrepo-com.svg" alt=""></button>
+        <h1>Inicio</h1>
+        <button><img src="../../../Assets/bell-svgrepo-com.svg" alt="" /></button>
+      </header>
+  
+      <main>
+        <section id="adds-button">
+          <button onclick="popUpAgendamento()">
+            <img src="../../../Assets/add-square-svgrepo-com.svg" alt="" />
+            Agendar
+          </button>
+          <button onclick="popUpCliente()">
+            <img src="../../../Assets/add-square-svgrepo-com.svg" alt="" />
+            Cliente
+          </button>
+        </section>
+  
+        <section id="cards-dias">
+          <h2>Hoje <span>07/06/2024</span></h2>
+          <div class="line"></div>
+  
+          <div class="cards-agendamentos">
+            <ul>
+              <li>
+                <div class="dados">
+                  
+                    Maria Silva
+                    <span
+                      ><p>Progressiva</p>
+                      <p>09:30</p></span
+                    >
+                  </h3>
+                </div>
+                <div class="div-contato">Contato <span>84 91234-5678</span></div>
+              </li>
+              <li>
+                <div class="dados">
+                  
+                    Maria Silva
+                    <span
+                      ><p>Progerssiva</p>
+                      <p>09:30</p></span
+                    >
+                  </h3>
+                </div>
+                <div class="div-contato">Contato <span>84 91234-5678</span></div>
+              </li>
+            </ul>
+          </div>
+        </section>
+  
+        <section id="cards-dias">
+          <h2>Amanhã <span>08/06/2024</span></h2>
+          <div class="line"></div>
+  
+          <div class="cards-agendamentos">
+            <ul>
+              <li>
+                <div class="dados">
+                  
+                    Maria Silva
+                    <span
+                      ><p>Progressiva</p>
+                      <p>09:30</p></span
+                    >
+                  </h3>
+                </div>
+                <div class="div-contato">Contato <span>84 91234-5678</span></div>
+              </li>
+              <li>
+                <div class="dados">
+                  
+                    Maria Silva
+                    <span
+                      ><p>Progerssiva</p>
+                      <p>09:30</p></span
+                    >
+                  </h3>
+                </div>
+                <div class="div-contato">Contato <span>84 91234-5678</span></div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <div id="cadastrar-cliente" class="no-wrapped">
+      <div id="pop-up-agendar">
+        <h4>Cadastrar nova cliente</h4>
+
+        <form id="form-cliente">
+          <div>
+            <label for="name">Nome da cliente:</label><br />
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Nome da cliente"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="contact">Número para contato:</label><br />
+            <input
+              type="number"
+              name="contact"
+              id="contact"
+              placeholder="Número para contato"
+            />
+          </div>
+
+          <div>
+            <label for="date-niver">Aniversário da cliente:</label><br />
+            <input type="date" name="date-niver" id="date-niver" />
+          </div>
+
+          <div class="buttons">
+            <button type="button" class="btn-Cancelar" onclick="popUpCliente()">Cancelar</button>
+            <button type="button" class="btn-Cadastrar" onclick="cadCliente()">Cadastrar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div id="criar-agendamento" class="no-wrapped">
+      <div id="pop-up-agendar">
+        <h4>Criar novo agendamento</h4>
+
+        <form id="form-agendamento" method="post">
+          <div>
+            <label for="nome-cliente">Nome da cliente:</label><br />
+            <select name="nome-cliente" id="nome-cliente">
+              <option value="">Selecione uma cliente</option>
+              <option value="Andreia">Andreia</option>
+              <option value="Nalva">Nalva</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="procedimemto">Procedimento a ser feito</label><br />
+            <input
+              type="text"
+              name="procedimemto"
+              id="conprocedimemtotact"
+              placeholder="Procedimento"
+            />
+          </div>
+
+          <div>
+            <label for="date-agendamento">Data do agendamento:</label><br />
+            <input type="datetime-local" name="date-agendamento" id="date-agendamento" />
+          </div>
+
+          <div class="buttons">
+            <button type="button" class="btn-Cancelar" onclick="popUpAgendamento()">Cancelar</button>
+            <button type="button" class="btn-Cadastrar">Cadastrar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

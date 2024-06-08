@@ -1,0 +1,247 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-family: "Inter", sans-serif;
+}
+
+body button{
+  cursor: pointer;
+}
+
+button img{
+  width: 24px;
+}
+
+header{
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 10px 15px;
+  
+  background-color: #7fffd4;
+  
+}
+
+header button{
+  border: none;
+  background: none;
+}
+
+header button img{
+  width: 39px;
+}
+
+main section#adds-button{
+  width: 100%;
+  margin: 10px auto;
+
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+  
+  color: #000000;
+}
+
+main section#adds-button button{
+  width: 175px;
+  padding: 14px;
+  
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+
+  border-radius: 5px;
+  border: none;
+  background-color: #D9D9D9;
+}
+
+main section#adds-button button img{
+  width: 24px;
+}
+
+section#cards-dias{
+  background-color: aquamarine;
+  text-align: center;
+
+  margin: 10px 15px 20px;
+  padding: 10px 0; 
+
+  border-radius: 5px;
+}
+
+section#cards-dias h2{
+  display: flex;
+  justify-content: space-between;
+
+  padding: 10px 15px 0;
+  margin-bottom: 10px;
+
+  font-weight: 600;
+
+  border-bottom: 1px solid hsla(0, 0%, 0%, 0.2);
+}
+
+section#cards-dias div.cards-agendamentos ul{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;;
+
+  margin: 0 15px;
+  list-style: none;
+}
+
+section#cards-dias div.cards-agendamentos ul li{
+  background-color: #FDFAFA;
+  border-radius: 5px;
+
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+
+  padding: 10px;
+
+  text-align: start;
+}
+
+section#cards-dias div.cards-agendamentos ul li div{
+  font-weight: 500;
+  font-size: 22px;
+}
+
+li span{
+  font-size: 18px;
+}
+
+.div-contato{
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== pop-up cadastro de cliente */
+
+div.main-no-wrapped{
+  display: none;
+}
+
+div#cadastrar-cliente.no-wrapped{
+  display: none;
+}
+
+div#cadastrar-cliente.wrapped{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: #000000ef;
+  
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+div#pop-up-agendar{
+  width: 70%;
+
+  background-color: rgba(127, 255, 212);
+
+  margin: 15px auto;
+  padding: 35px 20px;
+
+  border-radius: 10px;
+}
+
+@media (max-width: 1120px) {
+  div#pop-up-agendar{
+    width: 90%;
+  }
+}
+
+div#pop-up-agendar h4{
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+div#pop-up-agendar form{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+div#pop-up-agendar form label, h4{
+ font-size: 24px; 
+}
+
+div#pop-up-agendar form input, select{
+  width: 100%;
+  
+  padding: 12px 10px;
+  font-size: 16px; 
+  
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+div#pop-up-agendar form input#date-niver{
+  text-align: center;
+}
+
+div#pop-up-agendar form .buttons{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin: 37px auto 0;
+}
+
+div#pop-up-agendar form button{
+  width: 243px;
+  font-size: 24px;
+
+  padding: 10px 0;
+  
+  border-radius: 10px;
+  border: 0.5px solid rgba(0, 0, 0, 0.4);
+  background-color: #ffffff;
+}
+
+div#pop-up-agendar form button.btn-Cancelar{
+  background-color: rgba(250, 0, 0, 0.6);
+}
+
+div#pop-up-agendar form button.btn-Cadastrar{
+ background-color: rgba(0, 250, 0, 0.4);
+}
+
+div#criar-agendamento.no-wrapped{
+  display: none;
+}
+   
+div#criar-agendamento.wrapped{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: #000000ef;
+  
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+ 
